@@ -1,0 +1,19 @@
+{
+  "name": "react-native-enhance-webview",
+  "version": "0.0.1",
+  "description": "",
+  "main": "enhance-webview",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-native": "^0.55.4"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": ""
+}
