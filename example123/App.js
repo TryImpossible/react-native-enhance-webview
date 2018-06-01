@@ -22,35 +22,37 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-const { width } = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    const pageSource = { uri: 'http://192.168.0.13:8081/html/test.html' };
+    const pageSource = { uri: 'http://192.168.0.33:8081/html/test.html' };
     // const pageSource = { uri: 'https://www.baidu.com/' };
     return (
-      <RNEnhanceWebview
-          ref={ref => this.webView = ref}
-          style={{ flex: 1, width }}
-          source={pageSource}
-          keyboardDisplayRequiresUserAction={false}
-          // injectedJavaScript={'alert(123)'}
-          automaticallyAdjustContentInsets={false}
-          autoFocus={true}
-          allowFileAccessFromFileURLs={true}
-          scalesPageToFit={false}
-          mixedContentMode={'always'}
-          javaScriptEnabled={true}
-          startInLoadingState={true}
-          dataDetectorTypes='none'
-          onMessage={event => {
-            // let ret = JSON.parse(event.nativeEvent.data);
-            // console.log(event.nativeEvent.data);
-          }}
-          onLoad={() => {
+      <View style={{ width, height, marginTop: 20 }}>
+        <RNEnhanceWebview
+            ref={ref => this.webView = ref}
+            style={{ flex: 1, width }}
+            source={pageSource}
+            keyboardDisplayRequiresUserAction={false}
+            // injectedJavaScript={'alert(123)'}
+            automaticallyAdjustContentInsets={false}
+            autoFocus={true}
+            allowFileAccessFromFileURLs={true}
+            scalesPageToFit={false}
+            mixedContentMode={'always'}
+            javaScriptEnabled={true}
+            startInLoadingState={true}
+            dataDetectorTypes='none'
+            onMessage={event => {
+              // let ret = JSON.parse(event.nativeEvent.data);
+              // console.log(event.nativeEvent.data);
+            }}
+            onLoad={() => {
 
-          }} />
+            }} />
+        </View>
     ) 
     return (
       <View style={styles.container}>
