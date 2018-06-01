@@ -1,0 +1,5 @@
+rootProject.name = 'example123'
+include ':react-native-enhance-webview'
+project(':react-native-enhance-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-enhance-webview/android')
+
+include ':app'

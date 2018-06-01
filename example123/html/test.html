@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Auto Focus</title>
+  <style>
+    html,
+    body,
+    p,
+    div {
+      margin: 0;
+      padding: 0;
+      font-family: PMingLiU;
+      font-size: 16px;
+      color: rgb(127, 127, 127);
+    }
+  </style>
+
+</head>
+
+<body>
+    <input id="input" placeholder="請輸入" />
+</body>
+
+<script type="text/javascript" charset="utf-8">
+  
+  var element = document.getElementById("input");
+  element.focus();
+  setTimeout(() => {
+    element.innerHTML = '我是內容';
+  }, 1000);
+</script>
+
+</html>
