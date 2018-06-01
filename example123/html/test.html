@@ -16,20 +16,33 @@
       font-size: 16px;
       color: rgb(127, 127, 127);
     }
+
+    img {
+      width: 100%;
+      border-radius: 0.03rem;
+    }
+
   </style>
 
 </head>
 
 <body>
-    <input id="input" placeholder="請輸入" />
+  <input id="input" placeholder="請輸入" />
+  <div id="div" contenteditable="true" style="margin-top: 30px; width: 100%; min-height: 500px;" />
 </body>
 
 <script type="text/javascript" charset="utf-8">
-  
-  var element = document.getElementById("input");
-  element.focus();
+
+  var input = document.getElementById("input");
+  input.focus();
   setTimeout(() => {
-    element.innerHTML = '我是內容';
+    input.value = '我是內容';
+    var content = `<div class="abstract">
+      摘要：演讲：景鲲编辑：田令、江磊【新智元导读】4月19日，清华大学《人工智能前沿与产业趋势》系列课程第三讲开课，本讲主题是“自然语言处理技术的发展和行业应用”。自然语言处理（NLP）被认为是人工智能研究中最
+      </div>ß
+      <img style="display: block;" src="https://timg01.bdimg.com/timg?pa&amp;imgType=0&amp;sec=1439619614&amp;di=ac5604f12dc05d43ef6352437bf7bda9&amp;quality=100&amp;size=b980_10000&amp;src=http%3A%2F%2Fpic.rmb.bdstatic.com%2F868b22f65c5659436fa6f83391d42334.jpeg"><p style="margin: 10px 0;"><span class="bjh-p">演讲：景鲲</span></p><p style="margin: 10px 0;"><span class="bjh-p">编辑：田令、江磊</span></p><p style="margin: 10px 0;"><span class="bjh-p"><span class="bjh-strong">【新智元导读】</span>4月19日，清华大学《人工智能前沿与产业趋势》系列课程第三讲开课，本讲主题是“自然语言处理技术的发展和行业应用”。自然语言处理（NLP）被认为是人工智能研究中最为困难，也是最重要的问题之一，不仅基础研究难，技术落地和应用场景也很复杂。本课由百度度秘事业部总经理景鲲主讲。新智元作为独家合作媒体，带来干货整理。</span></p><img style="display: block;" src="https://timg01.bdimg.com/timg?pa&amp;imgType=0&amp;sec=1439619614&amp;di=e8a76c3c010679ec0b0a5d3a5e322e35&amp;quality=100&amp;size=b980_10000&amp;src=http%3A%2F%2Fpic.rmb.bdstatic.com%2F6d894939df5ff8649d3ab69c4033d16d.jpeg"><p style="margin: 10px 0;"><span class="bjh-p"><span class="bjh-strong">主讲老师</span></span></p><img style="display: block;" src="https://timg01.bdimg.com/timg?pa&amp;imgType=0&amp;sec=1439619614&amp;di=38f537665f656e5b8cc4b6ca4768b9bc&amp;quality=100&amp;size=b980_10000&amp;src=http%3A%2F%2Fpic.rmb.bdstatic.com%2F1d2c0e26fc0d4621b6b1342294d4db2d.jpeg"><p style="margin: 10px 0;"><span class="bjh-p"><span class="bjh-strong">雷鸣</span></span></p><p style="margin: 10px 0;"><span class="bjh-p">天使投资人</span></p><p style="margin: 10px 0;"><span class="bjh-p">百度创始七剑客之一</span></p><p style="margin: 10px 0;"><span class="bjh-p">酷我音乐创始人</span></p><p style="margin: 10px 0;"><span class="bjh-p">清华大学海峡研究院大数据 AI 中心 专家委员</span></p><p style="margin: 10px 0;"><span class="bjh-p"><span class="bjh-strong">特邀讲者</span></span></p>`;
+    var div = document.getElementById("div");
+    div.innerHTML = content;
   }, 1000);
 </script>
 
