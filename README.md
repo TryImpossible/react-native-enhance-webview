@@ -88,5 +88,5 @@ render() {
 > 用`ReactNative`開發App時，需要實現一個的功能，即在H5中讓`input`標籤自動獲取焦點並彈出鍵盤。但是，`ReactNative`提供的`WebvView`組件並沒有提供這個屬性或方法。被逼無奈，只好自己去想辦法增實現。為了儘量兼容`ReactNative`提供的`WebvView`，`Native`端採用繼承的方式實現`WebView`，並添加自動獲取焦點和彈出鍵盤的`Props`; `ReactNative`覆寫`WebView.android.js`和`WebView.ios.js`文件，添加`autoFocus ` `keyboardDisplayRequiresUserAction ` props; 目前這種解決方式比較靠譜，既支持了`ReactNative`的`WebView`，又方便自定義`WebView`;
 
 ## GIF
-![enhance-webview-ios]()
-![enhance-webview-anroid]()
+![ios效果圖](https://github.com/TryImpossible/react-native-enhance-webview/blob/master/example123/demo/enhance-webview-ios.gif?raw=true)
+![android效果圖](https://raw.githubusercontent.com/TryImpossible/react-native-enhance-webview/master/example123/demo/enhance-webview-android.gif)
