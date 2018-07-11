@@ -12,8 +12,23 @@
     "react-native": "^0.55.4"
   },
   "keywords": [
-    "react-native"
+    "react-component",
+    "react-native",
+    "webview",
+    "autofocus"
   ],
-  "author": "",
-  "license": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryImpossible/react-native-enhance-webview.git"
+  },
+  "author": {
+    "name": "try",
+    "email": "865068275@qq.com",
+    "url": "https://github.com/TryImpossible"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TryImpossible/react-native-enhance-webview/issues"
+  },
+  "homepage": "https://github.com/TryImpossible/react-native-enhance-webview#readme"
 }
